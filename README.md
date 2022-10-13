@@ -57,6 +57,29 @@ You are to make a simple "Add people into a Sankofa class". This is a full CRUD 
  * Add a `POST /fellows` route to your express server that will return the list of Sankofa fellows as a JSON response.
  * When you make the request to you backend, you will notice that you get an error that says something like `Cannot read properties of undefined (reading 'description')`. This is because we need to add some middleware that allows express to read the body of a request. After your cors middleware, add another line `app.use(express.json());`. 
 
+## Update a fellow
+ * Add a `PATCH /fellows/:id` or `PUT /fellows/:id` route that will update either name, age, or occupation with that id.
+ * e.g
+ ```
+ /// POST:
+ {
+    "id": 4,
+    "name": "Reuben Ogbonna",
+    "age": 31,
+    "occupation": "First Instructor"
+}
+
+// Marcy has grown and now Reuben takes the role of founder/excutive director
+
+///PATCH:
+
+{
+    "id": 4,
+    "name": "Reuben Ogbonna",
+    "age": 31,
+    "occupation": "Founder/Excutive Director"
+}
+ ```
 
  
  
