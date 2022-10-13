@@ -6,7 +6,6 @@
 const express = require('express');
 const cors = require("cors");
 let sankofa = require('./sankofa.js');
-// console.log(sankofa)
 
 
 
