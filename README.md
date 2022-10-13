@@ -49,6 +49,15 @@ You are to make a simple "Add people into a Sankofa class". This is a full CRUD 
  * Add a `GET /fellows` route to your express server that will return the list of Sankofa fellows as a JSON response. 
  * This assignment is strictly backend, we can view our results in our `http://localhost:3000/` or in POSTMAN.  
  * (Potential issue) You may notice that you get a cors error if you open up your console. To fix this error, `require('cors')` package we installed earlier and have your express app use it as middleware (e.g. `app.use(cors());`). After adding it, you should no longer get a cors error.
+ *  **Be sure to test your routes to see if it works**
+
+### **Note**: For all routes, be sure to include a status code and json response in the code!
+ 
+## Create a fellow
+ * Add a `POST /fellows` route to your express server that will return the list of Sankofa fellows as a JSON response.
+ * When you make the request to you backend, you will notice that you get an error that says something like `Cannot read properties of undefined (reading 'description')`. This is because we need to add some middleware that allows express to read the body of a request. After your cors middleware, add another line `app.use(express.json());`. 
+
+
  
  
  
