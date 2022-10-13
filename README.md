@@ -80,6 +80,9 @@ You are to make a simple "Add people into a Sankofa class". This is a full CRUD 
     "occupation": "Founder/Excutive Director"
 }
  ```
+ 
+ ## Delete a fellow
+  * Add a `DELETE /fellows/:id` route that will remove one of the fellows from the list of sankofa.
 
  
  
